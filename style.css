@@ -1,4 +1,3 @@
- /* Reset default margin and padding */
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +5,7 @@
     font-family: 'Arial', sans-serif;
 }
 
-/* Global Styles */
+
 body {
     background-color: #ededed;
     color: #333;
@@ -38,9 +37,17 @@ header {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 15px; /* Add spacing between nav items */
+    gap: 15px; 
     margin: 0;
-    padding: 0; /* Remove default padding */
+    padding: 0; 
+    
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 nav ul li a {
@@ -57,15 +64,6 @@ nav ul li a:hover {
 }
 
 /* Hero Section */
-#aws_poster {
-    width: 60vw; 
-    display: block;
-    margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-/* Hero Section */
 #hero {
     padding: 50px 20px;
     text-align: center;
@@ -78,6 +76,14 @@ nav ul li a:hover {
 
 #hero h3{
     color: #ff9c00; 
+}
+
+#aws_poster {
+    width: 60vw; 
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 /* Sections */
@@ -121,7 +127,7 @@ section {
 }
 
 .speaker-container {
-    flex-wrap: wrap; /* Ensures responsiveness */
+    flex-wrap: wrap; 
     max-width: 920px;
     display: grid;
     gap: 20px; 
@@ -158,7 +164,7 @@ section {
 }
 
 .speaker-info h4 {
-    margin: 5px 0 10px 0; /* Adds space below the name */
+    margin: 5px 0 10px 0; 
     font-size: 12px;
     font-weight: bold;
     text-align: left;
@@ -189,17 +195,18 @@ section {
 }
 
 .venue-img {
-    display: flex; /* Or display: grid; */
-    flex-wrap: wrap; /* Allow images to wrap */
-    gap: 20px; /* Space between images */
-    justify-content: center; /* Center images horizontally */
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
 }
 
 .venue-img img {
     width: 100%;
     max-width: 600px;
     border-radius: 10px;
-    margin-top: 20px; /* Space below each image */
+    margin-top: 20px; 
+    margin-bottom: 5px;
 }
 
 /* Schedule Section */
@@ -258,11 +265,6 @@ section {
     margin-bottom: 10px;
   }
   
-  .keynote-highlight {
-    font-weight: bold;
-    color: #e74c3c;
-  }
-  
   @media (max-width: 600px) {
     .schedule-container {
       padding: 15px;
@@ -270,7 +272,7 @@ section {
   
     .event-block {
       padding: 10px;
-      border-left: 2px solid #4CAF50;
+      border-left: 2px solid #04273a;
     }
   
     .event-block h3 {
